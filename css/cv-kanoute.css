@@ -15,52 +15,53 @@
         }
         .container {
             display: flex;
-            max-width: 1100px;
+            width: 230mm;
+            min-height: 270mm;
+            /* max-width: 1100px; */
             margin: 40px auto;
             background: white;
             border-radius: 15px;
             overflow: hidden;
         }
         .gauche {
-            background-color: rgb(224, 110, 110);
+            background-color: rgb(211, 178, 138);
             width: 40%;
             padding: 30px;
         }
         .gauche section {
-            padding-top: 250px;
+            padding-top: 235px;
         }
         .gauche i {
-            color: #f2f2f2;
+            color: rgb(36, 22, 5);
         }
         .gauche h3 {
             margin-top: 25px;
-            color: white;
+            color: rgb(36, 22, 5);
         }
-        .gauche h3 ul li {
-
-        }
+        
         
         .droite {
             width: 60%;
             padding: 40px;
+            background-color: beige;
             /*animation: slideRight 2s ease;*/
         }
-        .droite h2 {
-        
+        .droite section {
+            padding-top: 20px;
         }
         .trait {
-            width: 400px;
+            width: 300px;
             height: 4px;
-            background-color: #f2f2f2;
+            background-color: rgb(56, 36, 10);
             margin-top: 1px;
         }
         .droite h3 {
-            color:rgb(224, 110, 110) ;
+            color:rgb(56, 36, 10) ;
         }
         .droite  .trai {
-            width: 80px;
+            width: 70px;
             height: 4px;
-            background-color: rgb(224, 110, 110);
+            background-color: rgb(56, 36, 10);
             margin-top: 1px;
         }
         @keyframes slideRight {
@@ -74,15 +75,18 @@
 
         header {
             display: flex;
-            background-color: rgb(226, 152, 152);
-            padding: 20px;
+            background-color: rgb(243, 221, 195);
+            padding-left: 20px;
             border-radius: 10px;
             margin-bottom: 30px;
-            margin-left: -330px;
-           
+            margin-left: -240px; 
+            margin-right: -50px; 
+        
+            
             }
             header .photo {
-                margin-left: -90px;
+                padding-top: 20px;
+                margin-left: -95px;  
             }
             header .photo img {
             width: 150px;
@@ -93,13 +97,17 @@
             margin-right: 400px;
         }
         header .intro {
-            margin-right: 900px;
-            
+           
+            margin-left: -250px;
 
         }
+        
+
         header  h1 {
+            transition: 2s;
             animation: slideRight 7s ease;
         }
+        
         footer{
             text-align:center;
             padding:20px;
@@ -111,6 +119,6 @@
             border-radius: 15px;
         }
         button:hover{
-            background-color: rgb(226, 152, 152);
+            background-color: rgb(36, 22, 5);
             color: white;
         }
