@@ -8,6 +8,7 @@ window.addEventListener("load",()=>{
 
 })
 
+
 const members = document.querySelectorAll(".member");
 
 const observer = new IntersectionObserver((entries) => {
@@ -17,7 +18,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.2
+    threshold:0.6
 });
 
 members.forEach(member => {
