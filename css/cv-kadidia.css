@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #cfd3d8;
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+/* BOUTONS */
+.barre-boutons {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.bouton {
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.bouton-accueil {
+    border: 2px solid #b5855d;
+    color: #b5855d;
+    background: white;
+}
+
+.bouton-telecharger {
+    background: #b5855d;
+    color: white;
+}
+
+.bouton:hover {
+    transform: scale(1.05);
+}
+
+#message-telechargement {
+    text-align: center;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.conteneur-cv {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.colonne-gauche {
+    width: 35%;
+    background: #D2BEA9;
+    padding: 310px 30px 40px 30px;
+}
+.colonne-gauche ul {
+    padding-left: 18px; 
+}
+
+.colonne-gauche section {
+    margin-bottom: 25px;
+    margin-left: 40px;
+}
+
+.colonne-gauche h3 {
+    margin-bottom: 10px;
+    color: #655143;
+}
+
+.colonne-gauche p,
+.colonne-gauche li {
+    color: #655143;
+    margin-bottom: 8px;   
+    line-height: 1.6;  
+}
+
+.colonne-droite {
+    width: 65%;
+ background: white; 
+ margin-top: 10px;
+    padding: 40px;
+
+
+}
+
+.entete {
+    background: #F7EFEC;
+    padding: 40px;
+    margin-left: -150px;
+    border-radius: 20px 0 0 20px;
+    position: relative;
+}
+
+.photo-profil {
+    position: absolute;
+    left: -90px;
+    top: 20px;
+}
+
+.photo-profil img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 6px solid white;
+    object-fit: cover;
+}
+
+.texte-entete {
+    margin-left: 140px;
+}
+
+.entete h1 {
+    color: #b5855d;
+     margin-bottom: 10px;
+}
+
+.entete h2 {
+    border-bottom: 3px solid #b5855d;
+    display: inline-block;
+    margin-bottom: 15px;
+      color: #b5855d;
+}
+
+.entete p {
+    color: #A39890;
+}
+
+.formations h3 {
+    margin-top: 40px;
+    color: #b5855d;
+    position: relative;
+}
+
+.formations h3::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #b5855d;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.bloc-formation {
+    margin-top: 25px;
+}
+
+.bloc-formation p{
+    margin-top: 25px;
+}
+
+.ligne-formation {
+    display: flex;
+    justify-content: space-between;
+        margin-top: 25px;
+
+}
+
+.ligne-formation span {
+    color: #8B5E3C;
+    font-weight: bold;
+}

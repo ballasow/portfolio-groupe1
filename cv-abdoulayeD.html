@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - DIALLO Abdoulaye.D</title>
+    <link rel="stylesheet" href="css/cv-abdoulayeD.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <button class="btn-retour">
+    <span class="icon">
+        <svg viewBox="0 0 24 24" fill="none">
+            <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </span>
+    Retour
+</button>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="photo-identity">
+                <img src="images/AbdoulayeD.jpeg" alt="Photo_identity">
+            </div>
+
+            <h3 class="section-titre">COORDONNÉES</h3>
+            <div class="contact-item"><span class="icon"><i class="fa-solid fa-phone"></i></span>223 72 83 24 13</div>
+            <div class="contact-item"><span class="icon"><i class="fa-solid fa-envelope"></i></span>abdoulaye24dembadiallo288@gmail.com</div>
+            <div class="contact-item"><span class="icon"><i class="fa-solid fa-location-dot"></i></span>Bacodjocoroni ACI</div>
+
+            <h3 class="section-titre">COMPÉTENCES</h3>
+            <ul class="competences-listes">
+                <li>MONGO DB</li>
+                <li>EXPRESS JS</li>
+                <li>NODE JS</li>
+                <li>REACT JS</li>
+            </ul>
+
+            <h3 class="section-titre">QUALITÉS</h3>
+            <ul class="qualites-listes">
+                <li>Optimiste</li>
+                <li>Créatif</li>
+                <li>Rigoureux</li>
+
+            </ul>
+
+            <h3 class="section-titre">LANGUES</h3>
+            <ul class="langues-listes">
+                <li>ANGLAIS : Débutant</li>
+                <li>FRANCAIS : Courant</li>
+
+            </ul>
+
+            <h3 class="section-titre">CENTRES D'INTÉRÊT</h3>
+            <ul class="interet-listes">
+                <li>Veille technologique</li>
+                <li>Lecture</li>
+                <li>Apprentissage en ligne</li>
+                <li>Voyage</li>
+            </ul>
+        </aside>
+        <main class="main">
+            <div class="header-top">
+                <h1>DIALLO <span style="font-weight: 500;">Abdoulaye.D</span> </h1>
+                <div class="sous-titre">Développeur Web Junior & Designer</div>
+                
+          
+                <p style="margin-top: 12px;"> Développeur junior passionné par le web, j’utilise JavaScript
+                    (React, Node, Express) pour créer des applications web performantes, curieux et rigoureux, je
+                    contribue à des projets innovants tout en développant mes compétences. </p>
+            </div>
+
+
+            <div class="section-titre">EXPÉRIENCES PROFESSIONNELLES</div>
+            <div class="section-ligne"></div>
+
+            <div class="experience-item">
+                <div class="exp-titre">DÉVELOPPEUR WEB JUNIOR (Stage)</div>
+                <div class="exp-entreprise">LOGINEO, Bamako, Mali</div>
+                <div class="exp-duree">
+                    20 Oct 2025 – 20 Nov 2025
+                </div>
+                <div class="exp-description">
+                    <ul>
+                        <li>Développement d’applications web en JavaScript (React.js, Node.js, Express.js)</li>
+
+                        <li>Intégration d’APIs, gestion de bases de données</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-titre">DESIGNER - UX/UI (Stage)</div>
+                <div class="exp-entreprise">ODC, Bamako, Mali</div>
+                <div class="exp-duree">2 Juil 2024 – 14 Nov 2024</div>
+                <div class="exp-description">
+                    <ul>
+                        <li>Conception de logos et d’affiches (Photoshop, Illustrator, Canva)</li>
+                        <li>Réalisation de maquettes (Figma) et développement de site HTML/CSS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-titre">DÉVELOPPEUR WEB HTML/CSS JUNIOR (Stage)</div>
+                <div class="exp-entreprise">Protech, Bamako, Mali</div>
+                <div class="exp-duree">9 Juil 2022 – 01 Oct 2022</div>
+                <div class="exp-description">
+                    <ul>
+                        <li>Conception de sites web avec HTML, CSS, Bootstrap</li>
+                        <li>Participation à la maintenance et à la mise à jour de sites existants</li>
+                        <li>Animation de formations en Word et Excel</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-titre">FORMATIONS</div>
+             <div class="section-ligne"></div>
+          
+
+
+            <div class="formation-item">
+                <div class="formation-titre">LICENCE EN INFORMATIQUE DE GESTION – OPTION DÉVELOPPEMENT AVANCÉ</div>
+                <div class="annee">2022 – 2023 • IAM (Bamako)</div>
+            </div>
+
+            <div class="formation-item">
+                <div class="formation-titre">DUT EN DÉVELOPPEMENT D’APPLICATIONS</div>
+                <div class="annee">2020 – 2022 • HETEC Mali</div>
+            </div>
+
+
+
+        </main>
+        
+    </div>
+
+    
+
+<!-- <div class="actions">
+    <button onclick="downloadCV()">
+       
+        Télécharger CV</button>
+    
+</div> -->
+
+<div class="actions">
+  <a href="All CVs/CV_Abdoulaye.D.pdf" download>
+    <button>Télécharger CV</button>
+  </a>
+</div>
+
+    <script>
+        function downloadCV() {
+
+    const link = document.createElement("a");
+   // link.href = "cv-hamidou.pdf"; 
+    link.download = "CV-Hamidou-Koita.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+   
+    alert("Le fichier est téléchargé avec succès");
+}
+const expItems = document.querySelectorAll('.experience-item');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+expItems.forEach(item => observer.observe(item));
+</script>
+</body>
+
+</html>
