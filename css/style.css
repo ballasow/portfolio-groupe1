@@ -105,6 +105,17 @@ nav a:hover {
   line-height: 1.2;
 }
 
+.our-team {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.our-team.active{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .hero p {
   max-width: 600px;
   margin: auto;
@@ -120,6 +131,31 @@ nav a:hover {
   font-size: 36px;
   margin-bottom: 60px;
 }
+
+
+.member{
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 1s ease;
+}
+
+.member.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.our-team {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.our-team.active{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 .team-grid {
   display: grid;
@@ -143,6 +179,17 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.member{
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 1s ease;
+}
+
+.member.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .member img {
