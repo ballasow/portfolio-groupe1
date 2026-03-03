@@ -35,6 +35,12 @@ aside {
     border-radius: 50%;
     border: 2px solid black;
 }
+.profil-img {
+    transition: transform 0.3s ease;
+}
+.profil-img:hover {
+    transform: scale(1.2);
+}
 .name {
     justify-content: flex-end;
     margin-top: -5%;
@@ -90,3 +96,37 @@ aside {
         margin-left: 2%;
     }
 }
+.boutons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    color: white;
+    .btn-left{
+        position: relative;
+        width: 400px;
+        height: 30px;
+        border-radius: 10px;
+    }
+    .btn-right{
+        width: 400px;
+        position: relative;
+        height: 30px;
+        background-color: 3475EB;
+        color: black;
+        border-radius: 10px;
+    }
+}
+.btn-left {
+    transition: transform 0.3s ease;
+}
+.btn-left:hover {
+    transform: scale(1.2);
+}
+
+.btn-right {
+    transition: transform 0.3s ease;
+}
+.btn-right:hover {
+    transform: scale(1.2);
+}
+
