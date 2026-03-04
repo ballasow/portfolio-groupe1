@@ -55,15 +55,18 @@ body {
 }
 
 .sidebar ul {
-    list-style: none;
+    
+   
 }
 
 .sidebar ul li {
-    font-size: 0.9rem;
+  
+    font-size: 1,7rem;
     margin-bottom: 10px;
     color: #333;
     display: flex;
     align-items: center;
+    letter-spacing: 10%;
 }
 
 .sidebar ul li i {
@@ -95,7 +98,7 @@ body {
     font-weight: 300;
     margin-top: 5px;
     line-height: 2;
-    word-spacing: 5px;
+    word-spacing: 2px;
 }
 
 .content-body {
@@ -104,34 +107,37 @@ body {
 
 /* Timeline Style */
 .timeline-item {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     padding-left: 20px;
     border-left: 1px solid #ccc;
     line-height: 2;
-    word-spacing: 4px;
-    letter-spacing: 3px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
     text-align: justify;
 }
 .timeline-item1 {
     top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     padding-left: 20px;
     border-left: 1px solid #ccc;
     line-height: 2;
-    word-spacing: 10px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
 }
 
 
 .timeline-item2{
     top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
     padding-left: 20px;
     border-left: 1px solid #ccc;
-     line-height: 2;
-    word-spacing: 10px;
+    line-height: 2;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    text-align: justify;
 }
 
 
@@ -140,7 +146,8 @@ body {
     align-items: center;
     margin-left: -32px;
     background: white;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
 .icon-title i {
