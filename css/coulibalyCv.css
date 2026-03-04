@@ -113,6 +113,20 @@ header {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
+
+  .content {
+    page-break-inside: avoid;
+  }
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: auto;
+  /* Permet le défilement horizontal */
+  min-width: 1200px;
+  /* Largeur minimale du body */
 }
 
 .container {
@@ -286,6 +300,10 @@ header {
       border-radius: 50%;
     }
   }
+}
+
+#dot-p {
+  top: 40px;
 }
 
 .item-header {
