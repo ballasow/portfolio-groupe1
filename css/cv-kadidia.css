@@ -237,3 +237,12 @@ body {
     }
 
 }
+@media print {
+    .barre-boutons {
+        display: none;
+    }
+
+    #message-telechargement {
+        display: none;
+    }
+}
