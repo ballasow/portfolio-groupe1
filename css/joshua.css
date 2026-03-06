@@ -101,11 +101,11 @@ footer{
 }
 
 /* hide footer during print / PDF generation */
-@media print {
+/* @media print {
     footer {
         display: none;
     }
-}
+} */
 button{
     background-color: #3475EB;
     color: white;
