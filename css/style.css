@@ -4,8 +4,8 @@
   --text-primary: #111827;
   --text-secondary: #6B7280;
   --accent: #4F46E5;
-  --accent-hover: #4338CA;
-  --border-light: #E5E7EB;
+  --accent-hover: #007BFF;
+  --border-light: #E5E7EB;;
 }
 
 html {
@@ -79,7 +79,7 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--accent);
+  color: var(--accent-hover);
 }
 
 .hero {
@@ -218,6 +218,10 @@ nav a:hover {
 .member:hover img {
   transform: scale(1.05);
 }
+
+/*joshua touch*/
+
+
 
 footer {
   background: var(--text-primary);
