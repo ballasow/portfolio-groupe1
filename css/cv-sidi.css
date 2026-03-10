@@ -427,7 +427,7 @@ h4{
     text-indent: -12px;
 }
 strong::before{
-    content:".";
+    
     font-size: large;
     /* vertical-align:top; */
     
