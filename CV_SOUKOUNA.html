@@ -6,7 +6,7 @@
     <title>CV - Bakary Soukouna</title>
     <link rel="stylesheet" href="css/CV_SOUKOUNA.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="js/cv_SOUKOUNA"></script>
 </head>
 <body>
     <div class="btn-principal">
@@ -43,7 +43,7 @@
             </section>
 
             <section class="skills-section">
-                <h3>SKILL</h3>
+                <h3>COMPÉTENCE</h3>
                 <ul>
                     <li>Package Office (Word, Excel, PowerPoint...)</li>
                     <li>Google Docs, Sheets et Slides</li>
@@ -52,7 +52,7 @@
             </section>
 
             <section class="languages-section">
-                <h3>LANGUAGES</h3>
+                <h3>LANGUES</h3>
                 <ul>
                     <li>Anglais (courant)</li>
                     <li>Français (courant)</li>
@@ -81,7 +81,7 @@
                 <section class="timeline-item">
                     <div class="icon-title">
                         <i class="fas fa-user-circle"></i>
-                        <h3>PROFILE</h3>
+                        <h3>PROFIL</h3>
                     </div>
                     <div class="timeline-content">
                         <p>Diplômé en Informatique de Gestion avec une expérience en assistance de direction, je combine expertise technique et engagement personnel. Je mets en avant rigueur et intégrité dans chaque projet.</p>
@@ -91,7 +91,7 @@
                 <section class="timeline-item1">
                     <div class="icon-title">
                         <i class="fas fa-briefcase"></i>
-                        <h3>EXPERIENCE</h3>
+                        <h3>EXPÉRIENCE</h3>
                     </div>
                     
                     <div class="experience-entry">
@@ -122,7 +122,7 @@
                 <section class="timeline-item2">
                     <div class="icon-title">
                         <i class="fas fa-graduation-cap"></i>
-                        <h3>EDUCATION</h3>
+                        <h3>ÉDUCATION</h3>
                     </div>
 
                     <div class="experience-entry">
@@ -145,40 +145,5 @@
         </div>
     </main>
 
-    <!--footer class="no-print">
-        <button onclick="window.location.href='index.html'" class="btn-home">Retour à l'Accueil</button>
-        <button onclick="downloadPDF()" class="btn-download">Télécharger en PDF</button>
-    </footer-->
-
-   <!--script>
-        function downloadPDF() {
-            const element = document.getElementById('cv-content');
-            const options = {
-                margin: 0,
-                filename: 'CV_Bakary_Soukouna.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            };
-            html2pdf().set(options).from(element).save();
-        }
-    </script-->
-
-
-    <script>
-        function downloadCV() {
-
-    const link = document.createElement("a");
-    link.href = "All Cvs/CV_SOUKOUNA.PDF"; 
-    link.download = "Bakary_SOUKOUNA_CV.pdf";
-
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-   
-    
-}
-    </script>
 </body>
 </html>
