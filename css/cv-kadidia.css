@@ -174,7 +174,7 @@ body {
      transition:  0.3s ease;
 }
 .bloc-formation:hover {
-    transform: translateY(-5px);/* Animimation pour mettre en haut verticalement*/
+    transform: translateY(-5px); /* Animimation pour mettre en haut verticalement*/
     box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* Pour mettre de l'ombre*/
 } 
 
@@ -197,7 +197,7 @@ body {
 .ligne-formation span {
     color: #152437;
     font-weight: regular;
-    opacity: 0;
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 768px) {
