@@ -37,7 +37,9 @@
 <img src="images/SIDI_photo - Copie.jpg" alt="photo">
 </div>
 <div class="section">
-<h3>EDUCATION</h3>
+    <div class="tiret"><h3>EDUCATION</h3> <hr></div>
+
+
 
 <p><strong>Master 2 en Data Science en Cours</strong><br>
 UIEP-Mali (2026)</p>
@@ -52,7 +54,8 @@ FSEG Mali(2022)</p>
 
 
 <div class="section">
-<h3>COMPETENCES</h3>
+    <div class="tiret"><h3>COMPETENCES</h3> <hr></div>
+
 
 <ul>
 <li>Langages : Python, SQL, R</li>
@@ -67,7 +70,7 @@ FSEG Mali(2022)</p>
 
 
 <div class="section">
-<h3>LANGUES</h3>
+    <div class="tiret"><h3>LANGAGES</h3> <hr></div>
 
 <p>Anglais : Intermédiaire (B2)</p>
 <p>Français : Courant</p>
@@ -76,7 +79,9 @@ FSEG Mali(2022)</p>
 
 
 <div class="section">
-<h3>CONTACTS</h3>
+    <div class="tiret"><h3>CONTACT</h3> <hr></div>
+
+
 
 <p><i class="fa-solid fa-phone"></i> 73 71 50 31</p>
 <p><i class="fa-solid fa-envelope"></i> sidimohamed1294@gmail.com</p>
@@ -93,8 +98,8 @@ FSEG Mali(2022)</p>
 <div class="content">
 
 <section>
+<div class="tiret"><h3>PROFILE INFO</h3> <hr></div>
 
-<h3>PROFILE INFO</h3>
 
 <p>
 Jeune professionnel en Data Science (Master 2), avec une double formation en informatique de gestion et en assurance Banque & Finance. Passionné par l’analyse de données, l’IA et les solutions numériques innovantes.
@@ -105,16 +110,17 @@ Jeune professionnel en Data Science (Master 2), avec une double formation en inf
 
 <section>
 
-<h3>EXPERIENCES</h3>
+
+<div class="tiret"><h3>EXPERIENCES</h3> <hr></div>
 
 <div class="experience">
 
 <div class="exp-header">
 <h4>Spidi Mali</h4>
-<span>2023 - 2024</span>
+<span >2023 - 2024</span>
 </div>
 
-<p>
+<p class="fleche">
 Gestion et Animation des réseaux sociaux<br>
 création de contenus visuels et rédactionnels<br>
 Analyse des performances<br>
@@ -131,7 +137,7 @@ Stratégie et planification de communication digital
 <span>11-2022</span>
 </div>
 
-<p>
+<p class="fleche">
 Suivi et mise à jour des dossier client<br>
 Analyse des besoins bancaire
 </p>
@@ -143,7 +149,7 @@ Analyse des besoins bancaire
 
 <section>
 
-<h3>REALISATION</h3>
+<div class="tiret"><h3>REALISATION</h3> <hr></div>
 
 <div class="realisation">
 
@@ -171,7 +177,7 @@ Analyse des besoins bancaire
 </svg>
 <span>Retour</span>
 </a>
-<a href="#"class="b-download" onclick="onclick=downloadCV()">
+<a href="#"class="b-download" onclick="downloadCV()">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 <path d="M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2z"/>
 </svg>
@@ -184,17 +190,22 @@ Analyse des besoins bancaire
         function downloadCV() {
 
     const link = document.createElement("a");
-    link.href = "All CVs/CV_Sidi_Mohamed (1).pdf"
-    link.download = "Sidi_Mohamed_Berthé"
+    link.href = "All CVs/CV_Sidi_Mohamed.pdf";
+    link.download = "Sidi_Mohamed_Berthe_CV.pdf";
 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    // message après téléchargement
+    setTimeout(function(){
+    alert("✅ Votre CV a été téléchargé avec succès !");
+    },500);
 
    
     
 }
-    </script>
+</script>
+<script src="js/cv-sidi-animation.js"></script>
 
 </body>
 </html>
