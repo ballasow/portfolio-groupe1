@@ -170,16 +170,6 @@ header {
 
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  line-height: 1.6;
-  overflow-x: auto;
-  /* Permet le défilement horizontal */
-  min-width: 1200px;
-  /* Largeur minimale du body */
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -283,6 +273,29 @@ body {
   letter-spacing: 3px;
   font-weight: 300;
 }
+
+.notification {
+  position: fixed;
+  top: 10px;
+  right: 40%;
+  background-color: #3475EB;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0;
+  transform: translateX(400px);
+  transition: all 0.3s ease;
+  z-index: 10000;
+}
+
+.notification.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 
 .content {
   display: flex;
@@ -449,3 +462,322 @@ footer {
   }
 }
 
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablettes (1024px et moins) */
+@media (max-width: 1024px) {
+  body {
+    min-width: auto;
+  }
+
+  .container {
+    width: 100%;
+    min-width: auto;
+    margin-top: 60px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-width: auto;
+    padding: 200px 30px 40px;
+  }
+
+  .photo {
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .photo img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .content-header {
+    padding: 40px 30px;
+    padding-top: 60px;
+    height: auto;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .job-title {
+    font-size: 16px;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .profile-section,
+  .experience-section,
+  .education-section {
+    padding: 30px 30px;
+  }
+}
+
+/* Tablettes (768px et moins) */
+@media (max-width: 768px) {
+  header {
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .b-back,
+  .b-download {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .b-back svg,
+  .b-download svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .sidebar {
+    padding: 180px 20px 30px;
+  }
+
+  .photo img {
+    width: 160px;
+    height: 160px;
+    border: 6px solid white;
+  }
+
+  .section {
+    margin-bottom: 35px;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
+
+  .contact-item {
+    font-size: 12px;
+  }
+
+  .list {
+    font-size: 12px;
+  }
+
+  .content-header {
+    padding: 30px 20px;
+    padding-top: 50px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .job-title {
+    font-size: 14px;
+  }
+
+  .profile-section,
+  .experience-section,
+  .education-section {
+    padding: 25px 20px;
+  }
+
+  .section-header .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .section-header .icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .section-header .title {
+    font-size: 18px;
+  }
+
+  .timeline {
+    padding-left: 30px;
+  }
+
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .item-header h3 {
+    font-size: 16px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .position {
+    font-size: 14px;
+  }
+
+  .timeline-content ul {
+    font-size: 13px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+
+  footer {
+    padding: 30px 20px;
+    font-size: 12px;
+  }
+}
+
+/* Mobiles (480px et moins) */
+@media (max-width: 480px) {
+  header {
+    padding: 8px 10px;
+  }
+
+  .b-back,
+  .b-download {
+    font-size: 12px;
+    padding: 5px 10px;
+    gap: 5px;
+  }
+
+  .b-back span,
+  .b-download span {
+    display: none;
+  }
+
+  .b-back svg,
+  .b-download svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .sidebar {
+    padding: 150px 15px 25px;
+  }
+
+  .photo {
+    top: 50px;
+  }
+
+  .photo img {
+    width: 130px;
+    height: 130px;
+    border: 5px solid white;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .contact-item {
+    font-size: 11px;
+    gap: 8px;
+  }
+
+  .contact-icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .list {
+    font-size: 11px;
+  }
+
+  .content-header {
+    padding: 25px 15px;
+    padding-top: 40px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .job-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .profile-section,
+  .experience-section,
+  .education-section {
+    padding: 20px 15px;
+  }
+
+  .section-header {
+    gap: 10px;
+  }
+
+  .section-header .icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .section-header .icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .section-header .title {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .timeline {
+    margin-left: 10px;
+    padding-left: 25px;
+  }
+
+  .timeline-dot {
+    left: -32px !important;
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  #dot-p {
+    left: -27px !important;
+  }
+
+  .item-header h3 {
+    font-size: 14px;
+  }
+
+  .date {
+    font-size: 11px;
+  }
+
+  .position {
+    font-size: 12px;
+  }
+
+  .timeline-content ul {
+    padding-left: 15px;
+    font-size: 12px;
+  }
+
+  .text {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  footer {
+    padding: 25px 15px;
+    font-size: 11px;
+    margin-top: 50px;
+  }
+}
