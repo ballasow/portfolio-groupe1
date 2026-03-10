@@ -90,7 +90,7 @@ header {
 }
 
 .exp-pro{
-    padding-top: 200px;
+    padding-top: 232px;
 }
 .side-pro {
    padding-top: 210px;
@@ -98,21 +98,20 @@ header {
 }
 
 .sidebar {
-    background-color: #DACBBC;
-    padding: 30px 25px;
+    background-color: #3475EB;
+    padding: 60px 60px;
     color: #B79780;
 }
 
 .photo-identity {
-    left:100px;
-    border: 1.5px solid #655143;
+    left:60px;
+    border: 2px solid #152437;
 
-    top: 30px;
+    top: 55px;
     position:absolute;
     z-index: 100;
-    margin-top: 30px;
-    width: 220px;
-    height: 220px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -125,23 +124,29 @@ header {
     object-fit: cover;
 }
 .section-titre {
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: bold;
     margin: 25px 0 5px;  
-    color: #655143;
+    color: #000000;
 }
 
+.section-titre1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 25px 0 5px;  
+    color: #ffffff;
+}
 .section-ligne {
     width: 80px;          
     height: 2px;          
-    background: #655143;  
+    background: #9b7457;  
     margin-bottom: 12px; 
 }
 .section-ligne1 {
     margin-top: 5px;
     width: 80px;          
     height: 2px;          
-    background: #655143;  
+    background: #ffffff;  
     margin-bottom: 12px; 
 }
 .contact-item {
@@ -149,7 +154,7 @@ header {
     align-items: center;
     margin-bottom: 10px;
     font-size: 0.95rem;
-    color: #958375;
+    color: #ffffff;
 
 }
 .contact-item span.icon{
@@ -162,7 +167,7 @@ header {
 .langues-listes,
 .interet-listes {
     font-size: 0.95rem;
-    color: #958375;
+    color: #ffffff;
 
 }
 
@@ -180,18 +185,22 @@ header {
 .main {
     padding: 35px 40px;
 }
+.header-top p{
+color: #ffffffb5;
+}
+
 
 .header-top {
     
     position: absolute;
     right: 0;
     /* background-color: #a19b96; */
-    background-color:#F7EFEC;
-    width: 600px;
-    height: 210px;
+    background-color: #152437;
+    width: 630px;
+    height: 220px;
  
     margin-bottom: 30px;
-    padding-left: 190px;
+    padding-left: 224px;
     padding-bottom: 100px;
     /* background-color: #B28A6F; */
 }
@@ -200,7 +209,7 @@ header {
 
 .header-top h1 {
     font-size: 2.1rem;
-    color: #D2A482;
+    color: #ffffff;
     margin-bottom: 6px;
 }
 
@@ -208,7 +217,7 @@ header {
 
 .header-top .sous-titre {
     font-size: 1.3rem;
-    color: #B28A6F;
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -222,22 +231,22 @@ header {
 }
 
 .exp-titre {
-    font-size: 1.1rem;
-    color: #746964;
+    font-size: 16px;
+    color: #000000;
     font-weight: bold;
     margin-bottom: 4px;
 }
 
 .exp-entreprise {
     font-style: italic;
-    color: #DCCBBC;
+    color: #AEACAB;
     margin-bottom: 6px;
     font-size: 0.95rem;
 }
 
 .exp-duree {
     font-style: italic;
-    color: #DED0C2;
+    color: #AEACAB;
     font-size: 0.9rem; 
     margin-bottom: 8px;
     display: block;
@@ -300,65 +309,5 @@ header {
     font-weight: 600;
     font-size: 0.92rem;
 }
-
-
-.actions{
-    text-align:center;
-    margin:20px;
-}
-
-button{
- display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 15px;
-     margin-left: 15px;
-
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 600;
-
-    color: white;
-    background: #655143;
-
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-
-    position: relative;
-    overflow: hidden;
-}
-
-button:hover {
-   transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-}
-
-
-button:active {
-    transform: scale(0.96);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-
-button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.3);
-    transform: skewX(-25deg);
-    transition: left 0.6s ease;
-}
-
-button:hover::before {
-    left: 130%;
-}
-
 
 
