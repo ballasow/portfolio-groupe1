@@ -3,97 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Balla Sow</title>
+    <title>CV Balla Sow - Complet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/cv_balla.css">
 </head>
 <body>
-    <div class="cv-container">
-        <header class="header">
-            <div class="header-content">
-                <h1>Balla <span>Sow</span></h1>
-                <p>Développeur Full-Stack Junior</p>
+
+    <div class="actions-bar">
+        <a href="index.html" class="btn-nav"><i class="fas fa-arrow-left"></i> Retour</a>
+        <a href="All CVs/Balla-cv.pdf" download="CV_Balla_Sow.pdf" class="btn-nav btn-download">
+            <i class="fas fa-file-download"></i> Télécharger le CV
+        </a>
+    </div>
+
+    <div class="cv-container" id="cv-content">
+        <aside class="sidebar">
+            <div class="profile-img-container">
+                <img src="images/balla-sow.png" alt="Balla Sow">
             </div>
-        </header>
 
-        <main class="content">
-            <aside class="sidebar">
-                <div class="sidebar-inner">
-                    <section>
-                        <img src="images/balla-sow.png" alt="Photo de Balla Sow" class="profile-pic">
-                    </section>
-                        <h3>EDUCATION</h3>
-                        <div class="item">
-                            <p class="date">2022 - 2025</p>
-                            <p class="bold">Licence en Génie Logiciel</p>
-                            <p>TECHNOLAB-ISTA</p>
-                        </div>
-                        <div class="item">
-                            <p class="date">2021</p>
-                            <p class="bold">Baccalauréat – Série Sciences Exactes</p>
-                            <p>Lycée Public de Kenieba</p>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h3>Skills</h3>
-                        <ul>
-                            <li>Java, React, HTML, CSS, JavaScript, SQL mongo</li>
-                            <li>GitHub, Git</li>
-                            <li>Figma, Canva</li>
-                            <li>Leadership</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h3>LANGUAGES</h3>
-                        <ul>
-                            <li>Bambara (Native)</li>
-                            <li>Français (Courant)</li>
-                            <li>Anglais (Basique)</li>
-                        </ul>
-                    </section>
-
-                    <section >
-                        <h3>CONTACTS</h3>
-                        <p>tel: +22373538794</p>
-                        <p>mail: ballasowpro@gmail.com</p>
-                        <p>location: Bamako, Mali</p>
-                    </section>
+            <section class="sidebar-section">
+                <h2>EDUCATION</h2>
+                <div class="item">
+                    <p class="years">2022 - 2025</p>
+                    <p class="bold">Licence en Génie Logiciel</p>
+                    <p>TECHNOLAB-ISTA</p>
                 </div>
-            </aside>
+                <div class="item">
+                    <p class="years">2021</p>
+                    <p class="bold">Baccalauréat – Série Sciences Exactes</p>
+                    <p>Lycée Public de Kenieba</p>
+                </div>
+            </section>
 
-            <section class="profile-info">
-                <h3>PROFILE INFO</h3>
-                <p>
-                    Jeune développeur Full-Stack, je conçois des applications web robustes et intuitives en m'appuyant sur les bonnes pratiques du développement moderne. Ma démarche ? Comprendre le besoin, structurer la solution, puis coder avec rigueur pour transformer une idée en produit fonctionnel. Curieux de nature, je suis en veille permanente pour monter en compétences sur les nouvelles technologies. Je cherche une équipe où je pourrai contribuer tout en continuant à apprendre.
-                </p>
-                 <h3>Projets personnels</h3>
-                 <p>application web de gestion scolaire<br>
-                 logiciel de gestion de stock <br>
-                logiciel de gestion de pharmacie</p>
+            <section class="sidebar-section">
+                <h2>COMPETENCES</h2>
+                <ul>
+                    <li><span class="bold">Langages/Frameworks :</span> Java, React, HTML, CSS, JavaScript</li>
+                    <li><span class="bold">Bases de données :</span> SQL, MongoDB</li>
+                    <li><span class="bold">Outils :</span> GitHub, Git, Figma, Canva</li>
+                    <li><span class="bold">Soft Skills :</span> Leadership, Travail d'équipe</li>
+                </ul>
+            </section>
+
+            <section class="sidebar-section">
+                <h2>LANGUES</h2>
+                <ul>
+                    <li>Bambara (Native)</li>
+                    <li>Français (Courant)</li>
+                    <li>Anglais (Professionnel)</li>
+                </ul>
+            </section>
+
+            <section class="sidebar-section">
+                <h2>CONTACTS</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +22373538794</p>
+                    <p><i class="fas fa-envelope"></i> ballasowpro@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bamako, Mali</p>
+                </div>
+            </section>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Balla <br><span>Sow</span></h1>
+                <h3 id="typing-text">Développeur Full-Stack Junior</h3>
+            </header>
+
+            <section class="content-section">
+                <h2 class="section-title">PROFIL</h2>
+                <p>Jeune développeur Full-Stack, je conçois des applications web robustes et intuitives en m'appuyant sur les bonnes pratiques du développement moderne. Ma démarche ? Comprendre le besoin, structurer la solution, puis coder avec rigueur pour transformer une idée en produit fonctionnel. Curieux de nature, je suis en veille permanente pour monter en compétences sur les nouvelles technologies.</p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">EXPERIENCES</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="bold">WEB-APP-TECHNOLAB</span>
+                            <span class="date">2025 - 2026</span>
+                        </div>
+                        <p>Application web de gestion scolaire avec consultation des notes, emploi du temps, cours etc avec React et Express.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="bold">AUDIT-PRO</span>
+                            <span class="date">2025 - 2026</span>
+                        </div>
+                        <p>Application d'audit et contrôle de gestion faits sur mesure pour faciliter le travail des auditeurs.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="bold">EGYPT-SERVICE</span>
+                            <span class="date">2026</span>
+                        </div>
+                        <p>Mise en place d'un site web moderne pour l'entreprise Egypt-service.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">REALISATION</h2>
+                <p>Projets personnels et académiques disponibles sur mon profil GitHub. Démonstrations en direct durant la soutenance.</p>
             </section>
         </main>
-         <footer>
-        <button onclick="downloadCV()">Télécharger CV </button>
-        <a href="index.html"><button>Retour à l'accueil</button></a>
-    </footer>
     </div>
-    <script>
-        
-        function downloadCV() {
 
-    const link = document.createElement("a");
-    link.href = "All CVs/Balla-cv.pdf"; 
-    link.download = "cv_balla_sow.pdf";
-
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-   
-    
-}
-    </script>
-   
+    <script src="js/cv-balla.js"></script>
 </body>
 </html>
