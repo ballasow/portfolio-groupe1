@@ -202,6 +202,10 @@ body {
 
 @media screen and (max-width: 768px) {
 
+    body{
+        padding: 0;
+    }
+    
     .conteneur-cv {
         flex-direction: column-reverse; 
         width: 100%;
@@ -216,10 +220,12 @@ body {
 
     .colonne-gauche {
         padding: 40px 20px;
+        width: 100%;
     }
 
     .colonne-droite {
         padding: 20px;
+        width: 100%;
     }
 
      .entete {
@@ -228,11 +234,13 @@ body {
         align-items: center;
         text-align: center;
         margin-left: 0;
+        width: 100%;
     }
 
     .photo-profil {
         position: static; 
         margin-bottom: 20px;
+        width: 100%;
     }
 
     .photo-profil img {
@@ -242,6 +250,7 @@ body {
 
     .texte-entete {
         margin-left: 0;
+        width: 100%;
     }
 
 }
