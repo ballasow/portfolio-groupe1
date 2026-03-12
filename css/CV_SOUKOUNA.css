@@ -286,7 +286,7 @@ footer {
     gap: 20px;
 }
 /* RESPONSIVE pour tablette */
-@media (max-width:900px){
+@media (max-width:768px){
 
 .cv-container{
 flex-direction:column;
@@ -303,27 +303,44 @@ width:100%;
 
 }
 /* Pour téléphone */
-@media (max-width:600px){
+@media (max-width:767px){
 
 h1{
 font-size:22px;
 }
+body{
+    width: 600;
+    height: 900;
+    margin: 0;
+    padding: 0;
 
+}
 h2{
 font-size:16px;
 }
-
-.left-column{
-padding:15px;
+.btn-principal{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    margin: 0;   
+    padding-right: 0;
+    a{
+        text-align: center;
+    }
 }
-
-.right-column{
-padding:20px;
+.sidebar{
+    width: 100%;
+    margin: 0;
+    padding: 40px 200px;
+    text-align: start;
 }
+.main-content{
+     width: 100%;
+    margin: 0;
+    padding: 40px 200px;
+    text-align: start;
 
-.profile-img{
-width:90px;
-height:90px;
 }
 
 }
