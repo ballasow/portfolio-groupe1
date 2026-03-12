@@ -214,6 +214,18 @@ body {
         border-radius: 0;
         
     }
+    
+  .bouton {
+        padding: 10px 16px;  
+        font-size: 12px;    
+        margin-top: 30px;
+    }
+
+
+    .bouton i {
+        font-size: 14px;
+    }
+
 
     .colonne-gauche,
     .colonne-droite {
@@ -256,6 +268,30 @@ body {
         width: 100%;
     }
 
+     .formations h3 {
+        font-size: 18px;   
+    }
+
+     .formations h3::after {
+        width: 40px;      
+        height: 2px;
+    }
+
+    .ligne-formation h4 {
+        font-size: 15px;   
+    }
+
+    .ligne-formation span {
+        font-size: 14px;   
+    }
+
+    .bloc-formation li {
+        font-size: 14px;   
+    }
+    .bloc-formation {
+     font-size: 11px;  
+    }
+
 }
 @media print {
     .barre-boutons {
@@ -265,4 +301,6 @@ body {
     #message-telechargement {
         display: none;
     }
+
+    
 }
